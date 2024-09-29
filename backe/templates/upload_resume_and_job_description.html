@@ -1,0 +1,32 @@
+<!-- upload_resume_and_job_description.html -->
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <label for="resume_file">Upload Resume:</label><br>
+    <input type="file" name="resume_file" accept=".pdf,.docx"><br><br>
+
+    <label for="job_description">Job Description (Text):</label><br>
+    <textarea name="job_description" rows="10" cols="50" placeholder="Enter job description here"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+<!-- 
+{% if resume_text %}
+    <h2>Extracted Resume Text:</h2>
+    <p>{{ resume_text }}</p>
+{% endif %}
+
+{% if job_description %}
+    <h2>Job Description:</h2>
+    <p>{{ job_description }}</p>
+{% endif %} -->
+
+{% if certifications %}
+    <h2>Suggested Certifications:</h2>
+    <p>{{ certifications  }}</p>
+{% endif %}
+
+{% if roadmap %}
+    <h2>Roadmap Suggested :</h2>
+    <p>{{ roadmap }}</p>
+{% endif %}
