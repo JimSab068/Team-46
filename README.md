@@ -1,7 +1,7 @@
 We have created a website which takes in the pdf of resume and the job description, and prints out the courses mission in our resume and a suggested roadmatp 
 to learn the skills they are lacking.
 
-
+Backe folder is the backend integration of GPT code
 
 ChatGPT:
 Django:
